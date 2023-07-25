@@ -137,6 +137,7 @@ ul {
 .search-text {
   padding-left: 10px;
   font-size: 13.3px;
+  line-height: 15.29px;
   color: #757575;
   font-family: Arial, sans-serif;
 }
@@ -178,16 +179,16 @@ ul {
   width: 249px;
   min-height: 50px;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-form-name p {
   text-align: left;
   font-size: 14px;
+  line-height: 16.41px;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 14.5px 0;
 }
 
 .login-form-email {
@@ -196,16 +197,16 @@ ul {
   width: 249px;
   height: 50px;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-form-email p {
   text-align: left;
   font-size: 14px;
+  line-height: 16.41px;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 14.5px 0;
 }
 
 .login-form-button {
@@ -221,4 +222,6 @@ ul {
 .login-form-button p {
   font-family: Arial, sans-serif;
   text-transform: uppercase;
+  font-size: 13.3px;
+  line-height: 15.29px;
 }/*# sourceMappingURL=app.css.map */
