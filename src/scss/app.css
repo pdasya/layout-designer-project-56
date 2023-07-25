@@ -99,6 +99,7 @@ nav {
   width: 313px;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
   margin: 0;
 }
 
@@ -222,6 +223,7 @@ ul {
 .login-form-button p {
   font-family: Arial, sans-serif;
   text-transform: uppercase;
+  color: #FFFFFF;
   font-size: 13.3px;
   line-height: 15.29px;
 }/*# sourceMappingURL=app.css.map */
