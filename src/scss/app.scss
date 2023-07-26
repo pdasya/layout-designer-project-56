@@ -116,7 +116,6 @@ header {
     margin-top: 17px;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 22px;
     width: 570px;
   }
 
@@ -129,6 +128,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .login-form-name p {
@@ -147,6 +148,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1.5rem;
   }
 
   .login-form-email p {
