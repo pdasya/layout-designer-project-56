@@ -1,0 +1,112 @@
+@import "variables"; 
+
+.pricing-section {
+        padding: 100px 0 0;
+        background-position: center;
+        background-size: cover;
+        color: $color-white;
+        max-height: 750px;
+  
+    // .pricing-section__container
+    &__container {
+        text-align: center;
+    }
+  
+    // .pricing-section__subtitle
+    &__subtitle {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    
+    // .pricing-section-cards
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        // .pricing-section-cards__item
+        &__item {
+            padding: 0 1.5rem;
+            border-radius: 1rem;
+            border: 1px;
+            width: 366.67px;
+            height: 615px;      
+            
+            // .pricing-section-cards__item-free
+            &-free {
+                background-image: url('../images/subscribe_1.png');
+                background-position: center;
+                background-size: cover;
+            }
+
+            // .pricing-section-cards__item-standard
+            &-standard {
+                background-image: url('../images/subscribe_2.png');
+                background-position: center;
+                background-size: cover;
+            }
+
+            // .pricing-section-cards__item-premium
+            &-premium {
+                background-image: url('../images/subscribe_3.png');
+                background-position: center;
+                background-size: cover;
+            }
+
+            // .pricing-section-cards__item-header
+            &-header {
+                margin-top: 14px;
+            }
+
+            // .pricing-section-cards__item-price
+            &-price {
+                margin-top: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                // .pricing-section-cards__item-price-number
+                &-number {
+                    font-size: 64px;
+                    line-height: 64px;
+                }
+
+                // .pricing-section-cards__item-price-currency
+                &-currency {
+                    font-size: 32px;
+                    line-height: 48px;
+                    text-transform: uppercase;
+                    margin-left: 16.17px ;
+                }   
+            }
+
+            // .pricing-section-cards__item-button
+            &-button {
+                margin-top: 40px;
+                padding: 20px 30px;
+                border-radius: 5px;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: $color-white;
+                border: 1px solid $color-white;
+                background-color: rgba(0, 0, 0, 0);
+                width: 318.66px;
+                height: 66px;
+            }
+
+            // .pricing-section-cards__item-description
+            &-description {
+                margin-top: 64px;
+                font-size: 12.8px;
+                line-height: 19.2px;
+            }
+        }
+    }
+    &__footer {
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+  }

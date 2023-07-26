@@ -1,0 +1,84 @@
+.pricing-section {
+  padding: 100px 0 0;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  max-height: 750px;
+}
+.pricing-section__container {
+  text-align: center;
+}
+.pricing-section__subtitle {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.pricing-section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pricing-section-cards__item {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  border: 1px;
+  width: 366.67px;
+  height: 615px;
+}
+.pricing-section-cards__item-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing-section-cards__item-standard {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing-section-cards__item-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing-section-cards__item-header {
+  margin-top: 14px;
+}
+.pricing-section-cards__item-price {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pricing-section-cards__item-price-number {
+  font-size: 64px;
+  line-height: 64px;
+}
+.pricing-section-cards__item-price-currency {
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-left: 16.17px;
+}
+.pricing-section-cards__item-button {
+  margin-top: 40px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  width: 318.66px;
+  height: 66px;
+}
+.pricing-section-cards__item-description {
+  margin-top: 64px;
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+.pricing-section__footer {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}/*# sourceMappingURL=pricing-section.css.map */
