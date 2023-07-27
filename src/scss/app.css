@@ -394,133 +394,135 @@ h4 {
   margin: 0 auto;
   color: #fff;
 }
-.pricing-section__container {
+.pricing-section__title {
   text-align: center;
-}
-.pricing-section__subtitle {
   margin-bottom: 50px;
-  text-align: center;
 }
-.pricing-section-cards {
+.pricing-section__items {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 50px;
 }
-.pricing-section-cards__item {
+.pricing-section__item {
+  flex: 1 1 366.66px;
+  height: 615px;
+  text-align: center;
+}
+.pricing-section__text {
+  margin: 40px 0 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.item-pricing {
   padding: 0 1.5rem;
   border-radius: 1rem;
-  border: 1px;
-  height: 615px;
-  flex: 1 1 366.66px;
 }
-.pricing-section-cards__item:nth-child(1) {
-  background-image: url("../images/subscribe_1.png");
-  background-position: center;
-  background-size: cover;
+.item-pricing:nth-child(1) {
+  background: url("../images/subscribe_1.png") center center/cover no-repeat;
 }
-.pricing-section-cards__item:nth-child(2) {
-  background-image: url("../images/subscribe_2.png");
-  background-position: center;
-  background-size: cover;
+.item-pricing:nth-child(2) {
+  background: url("../images/subscribe_2.png") center center/cover no-repeat;
 }
-.pricing-section-cards__item:nth-child(3) {
-  background-image: url("../images/subscribe_3.png");
-  background-position: center;
-  background-size: cover;
+.item-pricing:nth-child(3) {
+  background: url("../images/subscribe_3.png") center center/cover no-repeat;
 }
-.pricing-section-cards__item-header {
+.item-pricing__title {
   margin-top: 23px;
+  font-size: 24px;
+  line-height: 36px;
 }
-.pricing-section-cards__item-price {
-  margin-top: 200px;
+.item-pricing__value {
+  font-size: 64px;
+  line-height: 1em;
+  margin: 200px 0 0;
   display: flex;
-  flex-direction: row;
+  gap: 16px;
   justify-content: center;
 }
-.pricing-section-cards__item-price-number {
-  font-size: 64px;
-  line-height: 64px;
-}
-.pricing-section-cards__item-price-currency {
+.item-pricing__value span {
   font-size: 32px;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-left: 16.17px;
+  line-height: 150%;
 }
-.pricing-section-cards__item-button {
-  margin-top: 40px;
+.item-pricing__button {
+  margin-top: 42px;
+  display: flex;
   padding: 20px 0;
-  border-radius: 5px;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
+  margin-bottom: 74px;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  border: 1px solid #fff;
-  background-color: rgba(0, 0, 0, 0);
-  width: 318.66px;
-  height: 66px;
+  line-height: 150%;
+  transition: all 0.5s ease 0s;
 }
-.pricing-section-cards__item-description {
-  margin-top: 64px;
-  font-size: 12.8px;
-  line-height: 19.2px;
+.item-pricing__button:hover {
+  background: #cacaca;
+  color: #08020d;
 }
-.pricing-section__footer {
-  margin-top: 40px;
-  font-size: 16px;
-  line-height: 24px;
+.item-pricing__text {
+  flex: 1 1 auto;
   text-align: center;
+  font-size: 12.8px;
+  line-height: 150%;
+  height: 57px;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 1px solid #fff;
 }
 
 @media (max-width: 1200px) {
-  .pricing-section-cards {
+  .pricing-section__items {
     flex-wrap: wrap;
   }
 }
 @media (max-width: 440px) {
-  .pricing-section__subtitle {
+  .pricing-section__title {
     text-align: center;
     margin: 3px 0 47px;
   }
-  .pricing-section-cards__item-description {
+  .pricing-section__text {
     margin: 44px 0 0;
     text-align: center;
     font-size: 16px;
     line-height: 150%;
   }
-  .pricing-section-cards__item {
+  .item-pricing {
     height: 595px;
     width: 374px;
   }
-  .pricing-section-cards__item:nth-child(1) {
+  .item-pricing:nth-child(1) {
     background: url("../images/subscribe_1.png") 0 0/cover no-repeat;
   }
-  .pricing-section-cards__item:nth-child(2) {
+  .item-pricing:nth-child(2) {
     background: url("../images/subscribe_2.png") 0 0/cover no-repeat;
   }
-  .pricing-section-cards__item:nth-child(3) {
+  .item-pricing:nth-child(3) {
     background: url("../images/subscribe_3.png") 0 0/cover no-repeat;
   }
-  .pricing-section-cards__item-price {
+  .item-pricing__value {
     margin: 199px 0 0;
   }
-  .pricing-section-cards__item-header {
+  .item-pricing__title {
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
-    font-weight: bold;
   }
-  .pricing-section-cards__item-description {
-    margin-top: 64px;
-    font-size: 12.8px;
-    line-height: 19.2px;
+  .item-pricing__text {
+    margin-top: -10px;
   }
-  .pricing-section__footer {
-    margin-top: 40px;
+}
+@media (max-width: 400px) {
+  .item-pricing {
+    padding: 0;
   }
-  .pricing-section-cards__item-button {
-    margin-top: 40px;
+  .item-pricing__button {
+    padding: 20px 80px;
   }
 }
 .news-section {
