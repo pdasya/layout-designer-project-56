@@ -156,10 +156,17 @@
       font-size: 16px;
       line-height: 24px;
       margin-top: 16px;
+      font-weight: bold;
     }
   
     .pricing-section-cards__item-description {
       margin-top: 64px;
+      font-size: 12.8px;
+      line-height: 19.2px;
+    }
+
+    pricing-section__footer {
+        margin-top: 40px;
     }
   }
   
