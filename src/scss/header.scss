@@ -1,3 +1,5 @@
+@import "variables";
+
 .header {
     position: absolute;
     top: 25px;
@@ -88,7 +90,6 @@
     }
   }
 
-@media (max-width: 414px) {
     @media (max-width: 1240px) {
         .header {
           max-width: 100%;
@@ -112,15 +113,27 @@
       
         .menu-header__navigation {
           flex: 0 0 100%;
-          margin: 0;
+          margin: 16px 0;
         }
       
         .menu-header__list {
           line-height: 12.89px;
           flex-direction: column;
-          align-items: space-between;
-          
-          margin: 16px 0;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 1px;
+        }
+
+        .menu-header__list:nth-child(2n) {
+            color: $color-dark-gray;
+        }
+
+        .menu-header__list:nth-child(2n+1) {
+            color: $color-gray;
+        }
+
+        .menu-header__link {
+            font-weight: 700;
         }
       
         .search-menu__input {
@@ -132,6 +145,5 @@
           margin-top: 3px;
         }
       }
-}
     
   

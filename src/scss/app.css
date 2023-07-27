@@ -231,7 +231,7 @@ h4 {
   padding: 0 0 0 10px;
 }
 
-@media (max-width: 414px) and (max-width: 1240px) {
+@media (max-width: 1240px) {
   .header {
     max-width: 100%;
   }
@@ -243,20 +243,30 @@ h4 {
     margin: 0 10px;
   }
 }
-@media (max-width: 414px) and (max-width: 414px) {
+@media (max-width: 414px) {
   .menu-header__logo {
     display: flex;
     align-items: center;
   }
   .menu-header__navigation {
     flex: 0 0 100%;
-    margin: 0;
+    margin: 16px 0;
   }
   .menu-header__list {
     line-height: 12.89px;
     flex-direction: column;
-    align-items: space-between;
-    margin: 16px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+  }
+  .menu-header__list:nth-child(2n) {
+    color: #cacaca;
+  }
+  .menu-header__list:nth-child(2n+1) {
+    color: #e0e0e0;
+  }
+  .menu-header__link {
+    font-weight: 700;
   }
   .search-menu__input {
     width: 100%;
