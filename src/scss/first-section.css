@@ -89,8 +89,7 @@
 }
 @media (max-width: 414px) {
   .first-section {
-    padding: 248px 20px 202px;
-    height: 851px;
+    padding: 248px 20px 201px;
   }
   .first-section__subtitle {
     margin: 0 0 16px;
