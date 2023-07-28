@@ -56,4 +56,32 @@
 }
 .basement-footer__link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .footer__row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__row {
+    padding: 62px 0 72px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) auto auto;
+    row-gap: 31px;
+  }
+  .footer__list {
+    margin-bottom: 0;
+  }
+  .footer hr {
+    margin: 0;
+  }
+  .footer__basement {
+    padding: 2rem;
+  }
+  .basement-footer__list {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=footer.css.map */
