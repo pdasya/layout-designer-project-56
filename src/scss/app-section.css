@@ -1,0 +1,37 @@
+.app-section {
+  position: relative;
+  box-sizing: content-box;
+  padding: 100px 20px 0;
+  max-width: 1200px;
+  margin: 0 331.5px 100px;
+}
+.app-section__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.mobile-app__left {
+  width: 600px;
+}
+.mobile-app__text {
+  font-size: 16px;
+  color: #cacaca;
+}
+.mobile-app__button {
+  margin-top: 16px;
+  border-radius: 32px;
+  width: 131px;
+  height: 53px;
+  background-color: #95390c;
+  color: #fff;
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+.mobile-app__right {
+  position: absolute;
+  top: 205px;
+  left: 864px;
+  width: 333px;
+  height: 278px;
+}/*# sourceMappingURL=app-section.css.map */
