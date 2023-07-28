@@ -1,11 +1,10 @@
 @import "variables"; 
 
 .app-section {
-    position: relative;
     box-sizing: content-box;
     padding: 100px 20px 0;
     max-width: 1200px;
-    margin: 0 331.5px 100px;
+    margin: 0 auto 100px;
 
     &__title {
         text-align: center;
@@ -17,31 +16,49 @@
 
 .mobile-app {
 
+    display: flex;
+    column-gap: 144px;
+
     &__left {
-        width: 600px;
+        flex: 0 1 600px;
+        margin-top: 16px;
+
+        & p {
+            margin: 0; 
+        }
     }
 
     &__text {
         font-size: 16px;
-        color: $color-dark-gray ;
+        color: $color-dark-gray;
+        font-weight: 400px;
+
+        &:nth-child(2) {
+            margin-top: 16px;
+        }
     }
 
     &__button {
+        display: inline-block;
         margin-top: 16px;
+        padding: 16px 40px;
         border-radius: 32px;
-        width: 131px;
-        height: 53px;
         background-color: $color-red;
         color: $color-white;
         font-size: 12.8px;
-        line-height: 19.2px;
+        line-height: 1.5;
+        transition: all 0.5s ease 0s;
+
+        &:hover {
+        background: $color-dark-gray;
+        color: $color-dark-black;
     }
+  }
 
     &__right {
-        position: absolute;
-        top: 205px;
-        left: 864px;
-        width: 333px;
-        height: 278px;
+        & img {
+            width: 100%;
+        }
+        
     }
 }

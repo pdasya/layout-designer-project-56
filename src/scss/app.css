@@ -613,11 +613,10 @@ h4 {
 }
 
 .app-section {
-  position: relative;
   box-sizing: content-box;
   padding: 100px 20px 0;
   max-width: 1200px;
-  margin: 0 331.5px 100px;
+  margin: 0 auto 100px;
 }
 .app-section__title {
   text-align: center;
@@ -625,29 +624,43 @@ h4 {
   margin-bottom: 48px;
 }
 
+.mobile-app {
+  display: flex;
+  -moz-column-gap: 144px;
+       column-gap: 144px;
+}
 .mobile-app__left {
-  width: 600px;
+  flex: 0 1 600px;
+  margin-top: 16px;
+}
+.mobile-app__left p {
+  margin: 0;
 }
 .mobile-app__text {
   font-size: 16px;
   color: #cacaca;
+  font-weight: 400px;
+}
+.mobile-app__text:nth-child(2) {
+  margin-top: 16px;
 }
 .mobile-app__button {
+  display: inline-block;
   margin-top: 16px;
+  padding: 16px 40px;
   border-radius: 32px;
-  width: 131px;
-  height: 53px;
   background-color: #95390c;
   color: #fff;
   font-size: 12.8px;
-  line-height: 19.2px;
+  line-height: 1.5;
+  transition: all 0.5s ease 0s;
 }
-.mobile-app__right {
-  position: absolute;
-  top: 205px;
-  left: 864px;
-  width: 333px;
-  height: 278px;
+.mobile-app__button:hover {
+  background: #cacaca;
+  color: #08020d;
+}
+.mobile-app__right img {
+  width: 100%;
 }
 
 [class*=container] {
