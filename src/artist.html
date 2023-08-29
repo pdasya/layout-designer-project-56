@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"MusicBox" Portal pdasya</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/app.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__menu menu-header">
+            <div class="menu-header__logo">
+                <img src = "images/logo.svg" alt="logo">
+                <a class="menu-header__link" href="#">Music box</a>
+            </div>
+            <nav class="menu-header__navigation">
+                <ul class="menu-header__list">
+                    <li class="menu-header__item">
+                        <a class="menu-header__link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a class="menu-header__link" href="#">Каталог</a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a class="menu-header__link menu-header__link-white" href="#">Исполнители</a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a class="menu-header__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="menu-header__search search-menu">
+                <input class="search-menu__input" type="text" placeholder="поиск..."/>
+              </form>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="first-section-section" id="page-description">
+            <div class="first-section__container">
+                <h1 class="first-artist-section__title">Morten Harket</h1>
+                <p class="first-artist-section__text">
+                    24875 поклонников
+                </p>
+                <button class="first-artist-section__button first-artist-section__button-purple" type="submit">
+                    <img src="./images/play-button.svg" alt = "icon play">
+                    <span>МИКС</span>
+                </button>
+                <button class="first-artist-section__button first-artist-section__button-purple" type="submit">
+                    <img src="./images/heart.svg" alt = "icon heart">
+                    <span>В ИЗБРАННОЕ</span>
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
