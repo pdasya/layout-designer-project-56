@@ -1,44 +1,39 @@
-@import "variables"; 
+@import url("variables"); 
 
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
-  // .footer__container
-  .footer__container {
+  .footer-container {
     padding: 0 20px;
   }
 
-  // .footer__row
-  &__row {
+  &-row {
     padding: 61px 0 65px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
   }
 
-  // .footer__title
-  &__title {
+  &-title {
     font-size: 18px;
     line-height: 27px;
     font-weight: bold;
     text-transform: uppercase;
     color: $color-white;
 
-    @media (max-width: 414px) {
-      .footer__title {
+    @media (width <= 414px) {
+      .footer-title {
         line-height: 150%;
       }
     }
   }
 
-  // .footer__list
-  &__list {
+  &-list {
     margin-top: 15px;
     margin-bottom: 0;
   }
 
-  // .footer__link
-  &__link {
+  &-link {
     color: $color-dark-gray;
 
     &:hover {
@@ -46,15 +41,13 @@
     }
   }
 
-  // .footer__img
-  &__img {
+  &-img {
     margin-top: 20px;
     display: flex;
     gap: 24px;
   }
 
-  // .footer__basement
-  .footer__basement {
+  .footer-basement {
     padding: 23px 0 34px;
   }
 
@@ -65,15 +58,13 @@
 }
 
 .basement-footer {
-  // .basement-footer__list
-  &__list {
+  &-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
   }
 
-  // .basement-footer__link
-  &__link {
+  &-link {
     color: $color-dark-gray;
 
     &:hover {
@@ -82,24 +73,23 @@
   }
 }
 
-// -------------[FOOTER-SECTION-MEDIA]----------------------------------------------
-@media (max-width: 800px) {
-  .footer__row {
+@media (width <= 800px) {
+  .footer-row {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 40px;
   }
 }
 
-@media (max-width: 414px) {
-  .footer__row {
+@media (width <= 414px) {
+  .footer-row {
     padding: 62px 0 72px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr) auto auto;
     row-gap: 31px;
   }
 
-  .footer__list {
+  .footer-list {
     margin-bottom: 0;
   }
 
@@ -107,11 +97,11 @@
     margin: 0;
   }
 
-  .footer__basement {
+  .footer-basement {
     padding: 2rem;
   }
 
-  .basement-footer__list {
+  .basement-footer-list {
     flex-direction: column;
   }
 }

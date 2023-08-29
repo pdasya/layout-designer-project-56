@@ -1,7 +1,9 @@
 {
   "devDependencies": {
     "htmlhint": "^1.1.4",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-scss": "^5.1.0"
   },
   "dependencies": {
     "surge": "^0.23.1"
