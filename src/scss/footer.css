@@ -1,44 +1,43 @@
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
-.footer .footer__container {
+.footer .footer-container {
   padding: 0 20px;
 }
-.footer__row {
+.footer-row {
   padding: 61px 0 65px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
-.footer__title {
+.footer-title {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
 }
-@media (max-width: 414px) {
-  .footer__title .footer__title {
+@media (width <= 414px) {
+  .footer-title .footer-title {
     line-height: 150%;
   }
 }
-.footer__list {
+.footer-list {
   margin-top: 15px;
   margin-bottom: 0;
 }
-.footer__link {
+.footer-link {
   color: #cacaca;
 }
-.footer__link:hover {
+.footer-link:hover {
   text-decoration: underline;
 }
-.footer__img {
+.footer-img {
   margin-top: 20px;
   display: flex;
   gap: 24px;
 }
-.footer .footer__basement {
+.footer .footer-basement {
   padding: 23px 0 34px;
 }
 .footer hr {
@@ -46,42 +45,44 @@
   margin: 8px 0 0;
 }
 
-.basement-footer__list {
+.basement-footer-list {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
-.basement-footer__link {
+.basement-footer-link {
   color: #cacaca;
 }
-.basement-footer__link:hover {
+.basement-footer-link:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
-  .footer__row {
+@media (width <= 800px) {
+  .footer-row {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 40px;
   }
 }
-@media (max-width: 414px) {
-  .footer__row {
+@media (width <= 414px) {
+  .footer-row {
     padding: 62px 0 72px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr) auto auto;
     row-gap: 31px;
   }
-  .footer__list {
+  .footer-list {
     margin-bottom: 0;
   }
   .footer hr {
     margin: 0;
   }
-  .footer__basement {
+  .footer-basement {
     padding: 2rem;
   }
-  .basement-footer__list {
+  .basement-footer-list {
     flex-direction: column;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */

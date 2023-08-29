@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboro";
+  font-family: Roboro;
   font-weight: 550;
   font-style: normal;
-  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboro";
+  font-family: Roboro;
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
 }
 html,
 body {
@@ -70,7 +70,7 @@ h4 {
   font-size: 24px;
 }
 
-@media (max-width: 414px) {
+@media (width <= 414px) {
   h1 {
     font-size: 30px;
   }
@@ -80,4 +80,6 @@ h4 {
   h3 {
     font-size: 16px;
   }
-}/*# sourceMappingURL=general.css.map */
+}
+
+/*# sourceMappingURL=general.css.map */
