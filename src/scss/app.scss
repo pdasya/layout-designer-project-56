@@ -2,14 +2,7 @@
 @import "general";
 @import "variables";
 @import "header";
-@import "first-section";
-@import "pricing-section";
-@import "news-section"; 
-@import "app-section";
 @import "footer";
-
-@import "first-artist-section";
-
 
   [class*="container"] {
     max-width: 1200px;
@@ -645,6 +638,330 @@
 
   .body-application__btn {
     margin-top: 17px;
+  }
+}
+
+.first-artist-section {
+  padding: 250px 0 223px;
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  color: $color-white;
+
+  // .first-artist-section__container
+  &__container {
+    padding: 0 20px;
+  }
+
+  // .first-artist-section__text
+  &__text {
+    margin: 16px 0 0;
+  }
+
+  // .first-artist-section__button
+  &__button {
+    display: inline-flex;
+    border: none;
+    gap: 16px;
+    align-items: center;
+    margin-top: 48px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $color-white;
+    transition: background-color 0.5s ease 0s;
+
+    & img {
+      filter: invert(1);
+      width: 20px;
+      height: 20px;
+    }
+
+    & span {
+      font-size: 12.8px;
+      text-transform: uppercase;
+      line-height: 150%;
+    }
+  }
+
+  // .first-artist-section__button-purple
+  &__button-purple {
+    padding: 20px 96px 20px 31px;
+    margin-right: 24px;
+    background-color: $color-purple;
+
+    &:hover {
+      background: #3e1785;
+    }
+  }
+
+  // .first-artist-section__button-red
+  &__button-red {
+    padding: 20px 47px 20px 31px;
+    background-color: $color-red;
+
+    &:hover {
+      background: #6d2c0c;
+    }
+  }
+}
+
+// -------------[FIRST-ARTIST-SECTION-MEDIA]----------------------------------------------
+@media (max-width: 414px) {
+  .first-artist-section {
+    padding: 225px 0;
+  }
+
+  .first-artist-section__button {
+    margin-top: 0;
+  }
+
+  .first-artist-section__button-purple {
+    margin: 48px 0 0;
+  }
+
+  .first-artist-section__button-red {
+    margin-top: 24px;
+  }
+}
+
+// -------------[POPULAR-SECTION]----------------------------------------------
+.popular-section {
+  padding: 100px 20px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  // .popular-section__title
+  &__title {
+    color: $color-white;
+  }
+
+  // .popular-section__items
+  &__items {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+
+  // .popular-section__track
+  &__track {
+    flex: 1 0 calc(50% - 50px);
+  }
+}
+
+.track-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // .track-popular__img
+  &__img {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  // .track-popular__info
+  &__info {
+    flex: 1 0 auto;
+  }
+
+  // .track-popular__title
+  &__title {
+    font-size: 12.8px;
+    line-height: 150%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: $color-white;
+  }
+
+  // .track-popular__songer
+  &__songer {
+    font-size: 12.8px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  // .track-popular__time
+  &__time {
+    font-size: 12.8px;
+    line-height: 150%;
+  }
+}
+
+// -------------[POPULAR-SECTION-MEDIA]----------------------------------------------
+@media (max-width: 650px) {
+  .popular-section__track {
+    flex: 1 0 100%;
+  }
+}
+
+// -------------[DISCOGRAPHY-SECTION]----------------------------------------------
+.discography-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+
+  // .discography-section__title
+  &__title {
+    color: $color-white;
+  }
+
+  // .discography-section__items
+  &__items {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+}
+
+.card-discography {
+  display: flex;
+  flex-direction: column;
+
+  // .card-discography__img
+  &__img {
+    max-width: 250px;
+    max-height: 250px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  // .card-discography__title
+  &__title {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: none;
+    color: $color-white;
+  }
+
+  // .card-discography__year
+  &__year {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+  }
+}
+
+// -------------[DISCOGRAPHY-SECTION-MEDIA]----------------------------------------------
+@media (max-width: 1200px) {
+  .discography-section__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .discography-section__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 414px) {
+  .discography-section__items {
+    grid-template-columns: repeat(2, 138px);
+    grid-template-rows: 206px repeat(2, 1fr);
+  }
+
+  .card-discography__img {
+    width: 137px;
+    height: 137px;
+  }
+}
+
+// -------------[SIMILAR-SECTION]----------------------------------------------
+.similar-section {
+  max-width: 1200px;
+  padding: 100px 20px 0;
+  margin: 0 auto 100px;
+
+  // .similar-section__title
+  &__title {
+    color: $color-white;
+  }
+
+  // .similar-section__items
+  &__items {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+}
+
+.card-similar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // .card-similar__img
+  &__img {
+    max-width: 250px;
+    max-height: 250px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  // .card-similar__title
+  &__title {
+    margin-top: 17px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: none;
+    color: $color-white;
+  }
+
+  // .card-similar__fans
+  &__fans {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+  }
+}
+
+// -------------[SIMILAR-SECTION-MEDIA]----------------------------------------------
+@media (max-width: 1200px) {
+  .similar-section__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .similar-section__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 414px) {
+  .similar-section__items {
+    grid-template-columns: repeat(2, 138px);
+    grid-template-rows: repeat(3, 230px);
+  }
+
+  .card-similar__img {
+    width: 137px;
+    height: 137px;
+  }
+
+  .card-similar__fans {
+    text-align: center;
   }
 }
 
