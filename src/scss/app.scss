@@ -1,7 +1,7 @@
-@import url("general");
-@import url("variables");
-@import url("header");
-@import url("footer");
+@import 'general';
+@import 'variables';
+@import 'header';
+@import 'footer';
 
   [class*="container"] {
     max-width: 1200px;
