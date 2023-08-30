@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "htmlhint": "^1.1.4",
+    "postcss-scss": "^4.0.7",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-scss": "^5.1.0"

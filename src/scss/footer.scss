@@ -1,4 +1,4 @@
-@import 'variables'; 
+@import url('variables'); 
 
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     color: $color-white;
 
-    @media (max-width:  414px) {
+    @media (width <=  414px) {
       .footer-title {
         line-height: 150%;
       }
@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width:  800px) {
+@media (width <=  800px) {
   .footer-row {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width:  414px) {
+@media (width <=  414px) {
   .footer-row {
     padding: 62px 0 72px;
     grid-template-columns: 1fr;
