@@ -1,4 +1,4 @@
-@import url("variables");
+@import "variables";
 
 .header {
     position: absolute;
@@ -88,7 +88,7 @@
     }
   }
 
-    @media (width <= 1240px) {
+    @media (max-width: 1240px) {
         .header {
           max-width: 100%;
         }
@@ -104,7 +104,7 @@
         }
       }
       
-      @media (width <= 414px) {
+      @media (max-width: 414px) {
         .menu-header-logo {
           display: flex;
           align-items: center;
