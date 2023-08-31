@@ -70,7 +70,7 @@ h4 {
   font-size: 24px;
 }
 
-@media (width <= 414px) {
+@media (max-width: 414px) {
   h1 {
     font-size: 30px;
   }
@@ -523,8 +523,6 @@ img {
   .pricing-section-title {
     text-align: center;
     margin: 3px 0 47px;
-    font-size: 18px;
-    line-height: 27px;
   }
   .pricing-section-text {
     margin: 44px 0 0;
@@ -557,7 +555,7 @@ img {
     margin-top: -10px;
   }
 }
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .item-pricing {
     padding: 0;
   }
@@ -673,10 +671,6 @@ img {
     flex-direction: column;
     gap: 64px;
   }
-  .news-section-title {
-    font-size: 18px;
-    line-height: 27px;
-  }
   .item-news {
     row-gap: 50px;
   }
@@ -774,10 +768,6 @@ img {
 @media (max-width: 414px) {
   .application-section {
     box-sizing: border-box;
-  }
-  .application-section-title {
-    font-size: 18px;
-    line-height: 27px;
   }
   .body-application-item {
     height: 252px;
@@ -919,10 +909,6 @@ img {
   .popular-section-track {
     flex: 1 0 100%;
   }
-  .popular-section-title {
-    font-size: 18px;
-    line-height: 27px;
-  }
 }
 .discography-section {
   max-width: 1200px;
@@ -980,10 +966,6 @@ img {
   .discography-section-items {
     grid-template-columns: repeat(2, 138px);
     grid-template-rows: 206px repeat(2, 1fr);
-  }
-  .discography-section-title {
-    font-size: 18px;
-    line-height: 27px;
   }
   .card-discography-img {
     width: 137px;
@@ -1047,10 +1029,6 @@ img {
   .similar-section-items {
     grid-template-columns: repeat(2, 138px);
     grid-template-rows: repeat(3, 230px);
-  }
-  .similar-section-title {
-    font-size: 18px;
-    line-height: 27px;
   }
   .card-similar-img {
     width: 137px;
