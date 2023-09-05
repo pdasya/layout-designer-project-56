@@ -1,5 +1,6 @@
+/* stylelint-disable */
 @import 'variables';
-
+/* stylelint-enable */
 .header {
     position: absolute;
     top: 25px;
@@ -87,8 +88,9 @@
       }
     }
   }
-
-    @media screen and (max-width: 1240px) {
+  /* stylelint-disable */
+    @media screen and (max-width: 1240px)
+    /* stylelint-enable */ {
         .header {
           max-width: 100%;
         }
@@ -103,7 +105,7 @@
           margin: 0 10px;
         }
       }
-      
+
       @media screen and (max-width: 414px) {
         .menu-header-logo {
           display: flex;

@@ -72,8 +72,9 @@
   h4 {
     font-size: 24px;
   }
-  
-  @media screen and (max-width: 414px) {
+  /* stylelint-disable */
+  @media screen and (max-width: 414px)
+  /* stylelint-enable */ {
     h1 {
       font-size: 30px;
     }

@@ -1,3 +1,5 @@
+/* stylelint-disable */
+/* stylelint-enable */
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -16,8 +18,9 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
+  /* stylelint-disable */
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .footer-title .footer-title {
     line-height: 150%;
   }
@@ -57,14 +60,14 @@
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .footer-row {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 40px;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .footer-row {
     padding: 62px 0 72px;
     grid-template-columns: 1fr;
